@@ -6,14 +6,15 @@
 !*.v12.suo
 *.user
 *.sln.docstates
+*.bak
 
 # Build results
-
 [Dd]ebug/
 [Rr]elease/
 x64/
 build/
-#[Bb]in/
+[Bb]in/
+![Bb]in/*.dll
 [Oo]bj/
 
 # Enable "build/" folder in the NuGet Packages folder since NuGet packages use it for MSBuild targets
