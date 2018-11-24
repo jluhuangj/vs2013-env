@@ -8,13 +8,16 @@
 *.sln.docstates
 *.bak
 
+/main/debug
+
 # Build results
-[Dd]ebug/
+#[Dd]ebug/
 [Rr]elease/
 x64/
 build/
 #[Bb]in/
 [Oo]bj/
+
 
 *.exe
 *.ilk
