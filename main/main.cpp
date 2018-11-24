@@ -1,10 +1,24 @@
+//#include <iostream>
+//
+//#include "json/json.h"
+//
+//void main()
+//{
+//	std::cout << "hello world" << std::endl;
+//
+//	system("pause");
+//}
+
+#include <boost/lambda/lambda.hpp>
 #include <iostream>
+#include <iterator>
+#include <algorithm>
 
-#include "json/json.h"
-
-void main()
+int main()
 {
-	std::cout << "hello world" << std::endl;
+	using namespace boost::lambda;
+	typedef std::istream_iterator<int> in;
 
-	system("pause");
+	std::for_each(
+		in(std::cin), in(), std::cout << (_1 * 3) << " ");
 }
